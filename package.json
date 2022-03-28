@@ -1,0 +1,42 @@
+{
+  "name": "yggdrasil_si",
+  "version": "0.0.1",
+  "description": "Shared peripheral input between mulitple devices.",
+  "main": "bundle.js",
+  "author": "Kaine Wright",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "PORT=3006 react-scripts start",
+    "build": "esbuild src/index.tsx --bundle --minify --sourcemap --outfile=build/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "esbuild": "^0.14.28",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.0",
+    "typescript": "^4.6.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.0.0-rc.7",
+    "cross-env": "^7.0.3"
+  },
+  "resolutions": {
+    "mini-css-extract-plugin": "2.4.7"
+  }
+}
