@@ -1,10 +1,11 @@
-import { useCallback, useState } from 'react';
-import { invoke } from '@tauri-apps/api/tauri';
+import { FunctionComponent, useCallback, useState } from 'react';
+import { invoke } from '@tauri-apps/api';
 
-const App = () => {
+const App: FunctionComponent = () => {
+  // For Persistent state use Rust to store the state in a file
   const [count, setCount] = useState(0);
+
   const increment = useCallback(() => {
-    console.log("increment");
     invoke('increment', { argument: count })
       .then((response: any) => {
         console.log("res from rust", response);
@@ -14,6 +15,7 @@ const App = () => {
         console.error(error);
       });
   }, [count]);
+
   const decrement = useCallback(() => {
     invoke("decrement", { argument: count })
       .then((response: any) => {

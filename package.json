@@ -1,7 +1,7 @@
 {
-  "name": "yggdrasil_si",
+  "name": "react-tauri-typescript-rust-starter",
   "version": "0.0.1",
-  "description": "Shared peripheral input between mulitple devices.",
+  "description": "Starter application for Tauri and ReactJS. Preconfigured with esbuild, typescript, and rust.",
   "main": "bundle.js",
   "author": "Kaine Wright",
   "license": "MIT",

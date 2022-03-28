@@ -1,6 +1,6 @@
 {
   "package": {
-    "productName": "yggdrasil_si",
+    "productName": "react-tauri-typescript-rust-starter",
     "version": "0.1.0"
   },
   "build": {
@@ -54,7 +54,7 @@
     },
     "windows": [
       {
-        "title": "Yggdrasil SI",
+        "title": "react-tauri-typescript-rust-starter",
         "width": 800,
         "height": 600,
         "resizable": true,
