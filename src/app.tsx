@@ -1,4 +1,4 @@
-import { FunctionComponent, useCallback, useState } from 'react';
+import React, { FunctionComponent, useCallback, useState } from 'react';
 import { invoke } from '@tauri-apps/api';
 
 const App: FunctionComponent = () => {
